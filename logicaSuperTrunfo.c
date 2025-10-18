@@ -1,43 +1,105 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
+int main(){
 
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    char Estado [5] = "";
+    char Codigo [5] = "";
+    char Cidade [20] = "";
+    int Populacao = 0;
+    float Km = 0.0;
+    float PIB = 0.0;
+    int Pontos = 0;
 
-    
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    char Estado2 [5] = "";
+    char Codigo2 [5] = "";
+    char Cidade2 [20] = "";
+    int Populacao2 = 0;
+    float Km2 = 0.0;
+    float PIB2 = 0.0;
+    int Pontos2 = 0;
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    printf("Digite os dados da primeira carta! \n");
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    printf("Digite o estado: \n");
+    scanf("%s", & Estado);
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+    printf("Digite o codigo da carta: \n");
+    scanf(" %s", & Codigo);
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
+    printf("Digite a cidade: \n");
+    scanf("%s", & Cidade);
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    printf("Digite a populacao: \n");
+    scanf("%d", & Populacao);
 
+    printf("Digite a area em Km: \n");
+    scanf("%f", & Km);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", & PIB);
+
+    printf("Digite pontos turisticos: \n");
+    scanf("%d", & Pontos);
+
+    printf("Digite os dados da segunda carta! \n");
+
+    printf("Digite o estado: \n");
+    scanf(" %s", & Estado2);
+
+    printf("Digite o codigo da carta: \n");
+    scanf("%s", & Codigo2);
+
+    printf("Digite a cidade: \n");
+    scanf("%s", & Cidade2);
+
+    printf("Digite a populacao: \n");
+    scanf("%d", & Populacao2);
+
+    printf("Digite a area em Km: \n");
+    scanf("%f", & Km2);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", & PIB2);
+
+    printf("Digite pontos turisticos: \n");
+    scanf("%d", & Pontos2);
+
+    printf("---------- CARTA 1 ----------\n");
+
+    printf("Estado: %s\n", Estado);
+    printf("Codigo da carta: %s\n", Codigo);
+    printf("Cidade: %s\n", Cidade);
+    printf("Populacao: %d\n", Populacao);
+    printf("Area en Km: %f\n", Km);
+    printf("PIB: %f\n", PIB);
+    printf("Pontos turisticos: %d\n", Pontos);
+
+    printf("---------- CARTA 2 ----------\n ");
+
+    printf("Estado: %s\n", Estado2);
+    printf("Codigo da carta: %s\n", Codigo2);
+    printf("Cidade: %s\n", Cidade2);
+    printf("Populacao: %d\n", Populacao2);
+    printf("Area en Km: %f\n", Km2);
+    printf("PIB: %f\n", PIB2);
+    printf("Pontos turisticos: %d\n", Pontos2);
+
+    printf("-------- Resultado --------\n");
+
+    if(Populacao < Populacao2) {
+        
+        printf("Populacao de %s: %d\n", Cidade, Populacao);
+        printf("Populacao de %s: %d\n", Cidade2, Populacao2);
+        printf("Carta 1 (%s) vence!\n", Cidade);
+        
+    } else {
+
+        printf("Populacao de %s: %d\n", Cidade, Populacao);
+        printf("Populacao de %s: %d\n", Cidade2, Populacao2);
+        printf("Carta 2 (%s) vence!\n", Cidade2);
+
+    }
+  
+  
     return 0;
 }
