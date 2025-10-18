@@ -84,7 +84,7 @@ int main(){
     printf("PIB: %f\n", PIB2);
     printf("Pontos turisticos: %d\n", Pontos2);
 
-    printf("-------- Resultado --------\n");
+    printf("--------- Resultado ---------\n");
 
     if(Populacao < Populacao2) {
         
